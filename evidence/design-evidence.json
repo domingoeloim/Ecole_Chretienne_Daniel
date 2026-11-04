@@ -1,0 +1,53 @@
+{
+  "contract": "Approved direction and constraints in ../BRIEF.md: bilingual editorial site for École Chrétienne Daniel, with a clear path to contact and no invented school details.",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "The accessibility snapshot exposed named navigation, headings, landmarks and labeled controls. Keyboard focus showed a visible 3px outline; the mobile menu opened, closed with Escape and restored focus. Reduced-motion mode removed the reveal clip and parallax transform. Measured contrast ratios include ink/white 13.78:1, soft ink/white 7.09:1, blue/white 7.38:1, red focus outline/white 4.95:1 and yellow/deep blue 7.11:1."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Reviewed rendered captures at 390x844 and 1440x900. At 320px, document and body widths were 310px with no overflowing elements; the mobile menu remained usable."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "not-applicable",
+      "reason": "The site is static and has no asynchronous content or loading operation."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "The gallery explains that school photographs will be added only after selection and the necessary authorization."
+    },
+    "error": {
+      "status": "not-applicable",
+      "reason": "The page has no dynamic data request or in-page operation that can fail; Facebook is an external destination."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "The unconfirmed phone number is explicitly identified; the official Facebook page is offered as the available contact route."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "All seven sections rendered; French and English switching updated page language and translated copy, and the supplied logo loaded."
+    },
+    "permission": {
+      "status": "pass",
+      "evidence": "The gallery states that photographs require selection and authorization before publication; no identifiable pupil photos are shown."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "1440x900",
+      "artifact": "desktop.png",
+      "observation": "The desktop opening shows the school identity, primary navigation, hero copy and contact/discovery links, with the next chapter beginning below."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "mobile.png",
+      "observation": "The mobile opening shows the compact header, readable hero, both actions and the beginning of the motto chapter without horizontal overflow."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "contract": "Bilingual, static multipage school website for families and school staff. The first screen identifies École Chrétienne Daniel in Fifadji, Cotonou; visitors can navigate the school, cycles, news, gallery and contact pages. No enrollment form, parent portal, unapproved media or unverified contact details. Target viewports: 390x844 and 1440x900.",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Browser checks confirmed keyboard-operable mobile navigation and disclosure, Escape closes and restores focus, language updates the document language/title/description and persists between routes, and reduced-motion mode leaves the motto illustration drawn. Representative text color pairs measured 4.95:1 to 13.78:1; interactive links and controls use visible focus styles and at least 44px heights where applicable."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "All nine routes were measured at 390x844 and 1440x900. Each had document scrollWidth no greater than innerWidth; mobile measured 380/390px and desktop 1430/1440px. The gallery was visually reviewed at both target widths."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "not-applicable",
+      "reason": "The pages and illustrations are local static assets; no asynchronous content loading is used."
+    },
+    "empty": {
+      "status": "not-applicable",
+      "reason": "The site has no dynamic listing or user-generated collection that can enter an empty state."
+    },
+    "error": {
+      "status": "not-applicable",
+      "reason": "There are no in-page submissions or remote data requests; external Facebook links leave the site."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Unconfirmed phone, hours and admissions terms are explicitly marked as unverified. Facebook reporting is attributed to the visible posts and its media is not reproduced."
+    },
+    "success": {
+      "status": "not-applicable",
+      "reason": "No create, submit or save workflow is offered on these informational pages."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "The gallery contains original illustrations only; adding school photos is deferred until the necessary permissions are confirmed."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "1440x900",
+      "artifact": "home-1440x900.png",
+      "observation": "The desktop homepage presents the school identity, primary navigation, hero message and original book illustration without overlap."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "gallery-390x844.png",
+      "observation": "The mobile gallery heading and introduction wrap cleanly; the responsive layout has no horizontal overflow."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "gallery-1440x900.png",
+      "observation": "The desktop gallery uses a clear editorial hierarchy and a three-column illustration layout."
+    }
+  ]
+}
